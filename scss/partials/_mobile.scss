@@ -1,0 +1,163 @@
+@media (max-width: 600px) {
+  #init-view {
+    width: 100%;
+    height: 475px;
+    background-color: $blue;
+    padding-top: 5px;
+    #header {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+      align-items: center;
+      background-color: $dark-grey;
+      height: 50px;
+      #ufo-star {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        #top-logo {
+          transform: scale(0.5);
+          -webkit-filter: invert(100%);
+          filter: invert(100%);
+        }
+        h3 {
+          font-family: $font;
+          color: $blue;
+          margin: 0 -10%;
+        }
+      }
+      #menu {
+        width: 50px;
+        height: 50px;
+        #menu-btn {
+          transform: scale(0.75);
+        }
+      }
+    }
+    #info {
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #top-ship {
+        transform: scale(2);
+        -webkit-filter: invert(15%);
+        filter: invert(15%);
+      }
+      p {
+        width: 85%;
+        margin-top: 35px;
+        font-family: $font;
+        font-size: 18px;
+        text-align: center;
+        color: $dark-grey;
+      }
+      #find-more {
+        width: 85%;
+        height: 45px;
+        line-height: 50px;
+        background-color: $light-grey;
+        font-family: $font;
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+      }
+      hr {
+        background-color: $dark-grey;
+        border: 0;
+        margin-top: 0;
+        height: 5px;
+        width: 85%;
+      }
+    }
+  }
+  #deals {
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .moon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 5px;
+      width: 85%;
+      height: 225px;
+      background-color: $light-grey;
+      text-align: center;
+      font-family: $font;
+      color: white;
+      .to-moon {
+        margin: 0 auto;
+        line-height: 50px;
+        font-weight: 600;
+        font-size: 18px;
+        width: 100%;
+      }
+      .emboss-top {
+        margin-top: -10px;
+        height: 2px;
+        width: 100%;
+        background-color: #444444;
+        border: 0;
+      }
+      .emboss-bottom {
+        margin-top: -25px;
+        height: 1px;
+        width: 100%;
+        background-color: #999999;
+        border: 0;
+      }
+      a {
+        font-size: 48px;
+        font-family: helvetica;
+      }
+      .underline {
+        margin: -15px auto 15px auto;
+        height: 5px;
+        background-color: white;
+        border: 0;
+        width: 55%;
+      }
+      p {
+        margin: -10px auto 10px auto;
+        width: 70%;
+        font-size: 13px;
+      }
+    }
+  }
+  #more {
+    height: 50px;
+    line-height: 17px;
+    width: 100%;
+    background-color: $blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+    p {
+      font-family: $font;
+      color: white;
+    }
+    #arrow {
+      transform: scale(0.5);
+      margin: 0 -50px 0 -50px;
+    }
+  }
+  #creds {
+    margin-top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: $dark-grey;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    p {
+      width: 70%;
+      color: $light-grey;
+      font-size: 10px;
+      font-family: $font;
+    }
+  }
+}

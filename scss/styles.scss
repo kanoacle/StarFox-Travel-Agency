@@ -1,0 +1,13 @@
+$dark-grey : #333333;
+$blue : #99CCCC;
+$light-grey : #666666;
+$font : "Open Sans", sans-serif;
+
+@import "partials/mobile";
+
+.thin {
+  font-weight: 300;
+}
+.bold {
+  font-weight: 600;
+}
