@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>StarFox Travel Agency</title>
 </head>
-<body onload="load()">
+<body>
   <div id="init-view">
     <div id="header">
       <div id="ufo-star">
@@ -68,14 +68,7 @@
       } else {
           menu.style.display = 'none';
           ship.style.filter = 'opacity(1)';
-          ship.style.filter = 'invert(20%)';
       }
-    }
-    function load() {
-      var menu = document.getElementById('menu-items');
-      var ship = document.getElementById('top-ship');
-      menu.style.display = 'none';
-      ship.style.filter = 'invert(20%)';
     }
   </script>
 </body>

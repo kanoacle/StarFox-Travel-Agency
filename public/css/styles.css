@@ -29,6 +29,7 @@
         #init-view #header #menu #menu-btn {
           transform: scale(0.75); }
     #init-view #menu-items {
+      display: none;
       position: absolute;
       width: 95.75%; }
       #init-view #menu-items .menu-item {
