@@ -1,0 +1,25 @@
+{
+  "name": "starFox-travel-agency",
+  "version": "1.0.0",
+  "description": "### Objective",
+  "main": "index.js",
+  "scripts":  {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanoacle/starFox-travel-agency.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanoacle/starFox-travel-agency/issues"
+  },
+  "homepage": "https://github.com/kanoacle/starFox-travel-agency#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
