@@ -34,6 +34,18 @@
         }
       }
     }
+    #menu-items {
+      .menu-item {
+        height: 50px;
+        line-height: 50px;
+        background-color: $dark-grey;
+        margin-top: 1px;
+        color: $blue;
+        font-family: $font;
+        font-size: 18px;
+        padding-left: 25px;
+      }
+    }
     #info {
       margin-top: 45px;
       display: flex;
@@ -72,12 +84,9 @@
     }
   }
   #deals {
-    height: 575px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    height: 550px;
     .moon {
+      margin: 14% auto;
       display: flex;
       flex-direction: column;
       justify-content: space-around;

@@ -15,8 +15,14 @@
         <h3>Star<span class="thin">Fox</span></h3>
       </div>
       <div id="menu">
-        <img id="menu-btn" src="img/menu_icon.svg">
+        <img id="menu-btn" src="img/menu_icon.svg" onclick="toggleMenu()">
       </div>
+    </div>
+    <div id="menu-items">
+      <div class="menu-item">Home</div>
+      <div class="menu-item">About</div>
+      <div class="menu-item">Services</div>
+      <div class="menu-item">Interstellar Travel</div>
     </div>
     <div id="info">
       <img id="top-ship" src="img/ship.svg">
@@ -52,5 +58,15 @@
   <div id="creds">
     <p>UFO graphics designed by Kari Gaynor and Dmitriy Lagunov from the Noun Project</p>
   </div>
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu-items');
+      if (menu.style.display === 'none') {
+          menu.style.display = 'block';
+      } else {
+          menu.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 </html>

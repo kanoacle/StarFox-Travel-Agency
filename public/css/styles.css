@@ -28,6 +28,15 @@
         height: 50px; }
         #init-view #header #menu #menu-btn {
           transform: scale(0.75); }
+    #init-view #menu-items .menu-item {
+      height: 50px;
+      line-height: 50px;
+      background-color: #333333;
+      margin-top: 1px;
+      color: #99CCCC;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      padding-left: 25px; }
     #init-view #info {
       margin-top: 45px;
       display: flex;
@@ -60,12 +69,9 @@
         height: 5px;
         width: 85%; }
   #deals {
-    height: 575px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
+    height: 550px; }
     #deals .moon {
+      margin: 14% auto;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
