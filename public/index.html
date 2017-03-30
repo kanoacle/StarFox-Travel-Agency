@@ -18,7 +18,7 @@
         <img id="menu-btn" src="img/menu_icon.svg" onclick="toggleMenu()">
       </div>
     </div>
-    <div id="menu-items">
+    <div class="hidden" id="menu-items">
       <div class="menu-item">Home</div>
       <div class="menu-item">About</div>
       <div class="menu-item">Services</div>
@@ -26,8 +26,8 @@
     </div>
     <div id="info">
       <img id="top-ship" src="img/ship.svg">
-      <p class="thinned">
-        We will take you too the <span class="bold">Moon and Back</span>! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes.
+      <p id="blurb" class="thinned">
+        We will take you to the <span class="bold">Moon and Back</span>! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes.
       </p>
       <div id="find-more">Find Out More</div>
       <hr>
@@ -62,12 +62,18 @@
     function toggleMenu() {
       var menu = document.getElementById('menu-items');
       var ship = document.getElementById('top-ship');
-      if (menu.style.display === 'none') {
-          menu.style.display = 'block';
-          ship.style.filter = 'opacity(0)';
+      var info = document.getElementById('blurb');
+      if (menu.classList.contains('hidden') === true) {
+          menu.removeAttribute('class');
+          menu.className = 'shown';
+          ship.className = 'hidden';
+          info.style.marginTop = '-44px';
       } else {
-          menu.style.display = 'none';
-          ship.style.filter = 'opacity(1)';
+          menu.removeAttribute('class');
+          menu.className = 'hidden';
+          ship.removeAttribute('class');
+          ship.className = 'shown';
+          info.style.marginTop = '60px';
       }
     }
   </script>
