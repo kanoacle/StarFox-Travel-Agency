@@ -169,8 +169,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-image: url("img/header_bg.svg");
-      background-size: cover;
+      background-image: url("../img/header_bg.svg");
       background-color: #99CCCC; }
       #init-view #header #ufo-star {
         display: flex;
@@ -314,7 +313,7 @@
       margin: 0 -50px 0 -50px; }
   #creds {
     margin-top: 0;
-    height: 100px;
+    height: 200px;
     width: 100%;
     background-color: #333333;
     text-align: center;
@@ -322,9 +321,9 @@
     justify-content: center; }
     #creds p {
       margin-top: 25px;
-      width: 70%;
+      width: 85%;
       color: #666666;
-      font-size: 10px;
+      font-size: 14px;
       font-family: "Open Sans", sans-serif; } }
 
 .thin {

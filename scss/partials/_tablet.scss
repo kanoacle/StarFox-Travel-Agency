@@ -19,8 +19,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-image: url('img/header_bg.svg');
-      background-size: cover;
+      background-image: $background;
       background-color: $blue;
 
       #ufo-star {
@@ -192,7 +191,7 @@
   }
   #creds {
     margin-top: 0;
-    height: 100px;
+    height: 200px;
     width: 100%;
     background-color: $dark-grey;
     text-align: center;
@@ -200,9 +199,9 @@
     justify-content: center;
     p {
       margin-top: 25px;
-      width: 70%;
+      width: 85%;
       color: $light-grey;
-      font-size: 10px;
+      font-size: 14px;
       font-family: $font;
     }
   }
