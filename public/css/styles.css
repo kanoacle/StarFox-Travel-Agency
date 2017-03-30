@@ -1,4 +1,8 @@
 @media (max-width: 600px) {
+  body {
+    margin: 0; }
+  .hidden {
+    display: none; }
   #init-view {
     width: 100%;
     height: 500px;
@@ -23,6 +27,8 @@
           font-family: "Open Sans", sans-serif;
           color: #99CCCC;
           margin: 0 -10%; }
+        #init-view #header #ufo-star p {
+          display: none; }
       #init-view #header #menu {
         width: 50px;
         height: 50px; }
@@ -71,7 +77,7 @@
   #deals {
     height: 550px; }
     #deals .moon {
-      margin: 14% auto;
+      margin: 50px auto;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -113,6 +119,8 @@
         margin: -10px auto 10px auto;
         width: 70%;
         font-size: 13px; }
+    #deals #ten-g {
+      display: none; }
   #more {
     height: 50px;
     line-height: 17px;
@@ -142,14 +150,172 @@
       font-size: 10px;
       font-family: "Open Sans", sans-serif; } }
 
+@media (min-width: 601px) and (max-width: 965px) {
+  body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif; }
+  .hidden {
+    display: block; }
+  #init-view {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #init-view #header {
+      width: 100%;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url("img/header_bg.svg");
+      background-color: #99CCCC; }
+      #init-view #header #ufo-star {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #init-view #header #ufo-star #top-logo {
+          margin: -10px auto;
+          -webkit-filter: invert(100%);
+          filter: invert(100%); }
+        #init-view #header #ufo-star #strfx {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          line-height: 16px;
+          color: #333333; }
+          #init-view #header #ufo-star #strfx h3 {
+            margin: 0; }
+          #init-view #header #ufo-star #strfx p {
+            margin: 0;
+            font-size: 18px; }
+    #init-view #menu-items {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      height: 35px;
+      line-height: 35px;
+      background-color: #333333;
+      border-radius: 5px;
+      margin: -17.5px auto; }
+      #init-view #menu-items .menu-item {
+        margin: 0 2.5%;
+        color: #99CCCC;
+        font-size: 12px; }
+      #init-view #menu-items #hm {
+        font-weight: bold;
+        color: white; }
+    #init-view #info {
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 400px;
+      width: 90%;
+      background-color: #99CCCC;
+      border-radius: 5px; }
+      #init-view #info #top-ship {
+        transform: scale(2);
+        margin-top: 5px;
+        -webkit-filter: invert(20%);
+        filter: invert(20%); }
+      #init-view #info p {
+        width: 85%;
+        margin-top: 60px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        text-align: center;
+        color: #333333; }
+      #init-view #info #find-more {
+        width: 35%;
+        height: 45px;
+        line-height: 50px;
+        background-color: #666666;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 12px; }
+      #init-view #info hr {
+        background-color: #333333;
+        border: 0;
+        margin-top: 0;
+        height: 5px;
+        width: 35%; }
+  #deals {
+    height: 550px; }
+    #deals .moon {
+      margin: 50px auto;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      width: 85%;
+      height: 225px;
+      background-color: #666666;
+      font-family: "Open Sans", sans-serif;
+      color: white; }
+      #deals .moon .to-moon {
+        margin: 75px auto 0 auto;
+        line-height: 50px;
+        font-weight: 600;
+        font-size: 18px; }
+      #deals .moon .emboss-top {
+        display: none; }
+      #deals .moon .emboss-bottom {
+        display: none; }
+      #deals .moon a {
+        font-size: 48px;
+        font-family: helvetica; }
+      #deals .moon .underline {
+        margin: 0 auto 50px auto;
+        height: 5px;
+        background-color: white;
+        border: 0;
+        width: 25%; }
+      #deals .moon p {
+        margin: -10px auto 10px auto;
+        width: 50%;
+        font-size: 14px;
+        order: 1; }
+    #deals #thirty-2 {
+      display: none; }
+  #more {
+    height: 50px;
+    line-height: 17px;
+    width: 100%;
+    background-color: #99CCCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0; }
+    #more p {
+      font-family: "Open Sans", sans-serif;
+      color: white; }
+    #more #arrow {
+      transform: scale(0.5);
+      margin: 0 -50px 0 -50px; }
+  #creds {
+    margin-top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #333333;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    #creds p {
+      width: 70%;
+      color: #666666;
+      font-size: 10px;
+      font-family: "Open Sans", sans-serif; } }
+
 .thin {
   font-weight: 300; }
 
 .bold {
   font-weight: 600; }
-
-.hidden {
-  display: none; }
 
 .shown {
   display: block; }

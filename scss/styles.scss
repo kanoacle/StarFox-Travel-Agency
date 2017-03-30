@@ -4,15 +4,13 @@ $light-grey : #666666;
 $font : "Open Sans", sans-serif;
 
 @import "partials/mobile";
+@import "partials/tablet";
 
 .thin {
   font-weight: 300;
 }
 .bold {
   font-weight: 600;
-}
-.hidden {
-  display: none;
 }
 .shown {
   display: block;

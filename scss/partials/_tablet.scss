@@ -1,3 +1,193 @@
-@media (min-width: 601px) and (max-width: 965) {
+@media (min-width: 601px) and (max-width: 965px) {
+  body {
+    margin: 0;
+    font-family: $font;
+  }
+  .hidden {
+    display: block;
+  }
+  #init-view {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #header {
+      width: 100%;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url('img/header_bg.svg');
+      background-color: $blue;
 
+      #ufo-star {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #top-logo {
+          margin: -10px auto;
+          -webkit-filter: invert(100%);
+          filter: invert(100%);
+        }
+        #strfx {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          line-height: 16px;
+          color: $dark-grey;
+          h3 {
+            margin: 0;
+          }
+          p {
+            margin: 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    #menu-items {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      height: 35px;
+      line-height: 35px;
+      background-color: $dark-grey;
+      border-radius: 5px;
+      margin: -17.5px auto;
+      .menu-item {
+        margin: 0 2.5%;
+        color: $blue;
+        font-size: 12px;
+      }
+      #hm {
+        font-weight: bold;
+        color: white;
+      }
+    }
+    #info {
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 400px;
+      width: 90%;
+      background-color: $blue;
+      border-radius: 5px;
+      #top-ship {
+        transform: scale(2);
+        margin-top: 5px;
+        -webkit-filter: invert(20%);
+        filter: invert(20%);
+      }
+      p {
+        width: 85%;
+        margin-top: 60px;
+        font-family: $font;
+        font-size: 18px;
+        text-align: center;
+        color: $dark-grey;
+      }
+      #find-more {
+        width: 35%;
+        height: 45px;
+        line-height: 50px;
+        background-color: $light-grey;
+        font-family: $font;
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 12px;
+      }
+      hr {
+        background-color: $dark-grey;
+        border: 0;
+        margin-top: 0;
+        height: 5px;
+        width: 35%;
+      }
+    }
+  }
+  #deals {
+    height: 550px;
+    .moon {
+      margin: 50px auto;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      width: 85%;
+      height: 225px;
+      background-color: $light-grey;
+      font-family: $font;
+      color: white;
+      .to-moon {
+        margin: 75px auto 0 auto;
+        line-height: 50px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .emboss-top {
+        display: none;
+      }
+      .emboss-bottom {
+        display: none;
+      }
+      a {
+        font-size: 48px;
+        font-family: helvetica;
+      }
+      .underline {
+        margin: 0 auto 50px auto;
+        height: 5px;
+        background-color: white;
+        border: 0;
+        width: 25%;
+      }
+      p {
+        margin: -10px auto 10px auto;
+        width: 50%;
+        font-size: 14px;
+        order: 1;
+      }
+    }
+    #thirty-2 {
+      display: none;
+    }
+  }
+  #more {
+    height: 50px;
+    line-height: 17px;
+    width: 100%;
+    background-color: $blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+    p {
+      font-family: $font;
+      color: white;
+    }
+    #arrow {
+      transform: scale(0.5);
+      margin: 0 -50px 0 -50px;
+    }
+  }
+  #creds {
+    margin-top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: $dark-grey;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    p {
+      width: 70%;
+      color: $light-grey;
+      font-size: 10px;
+      font-family: $font;
+    }
+  }
 }
