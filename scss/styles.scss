@@ -1,11 +1,13 @@
 $dark-grey : #333333;
 $blue : #99CCCC;
 $light-grey : #666666;
+$hover-grey : #444444;
 $font : "Open Sans", sans-serif;
 $background : url('../img/header_bg.svg');
 
 @import "partials/mobile";
 @import "partials/tablet";
+@import "partials/desktop";
 
 .thin {
   font-weight: 300;

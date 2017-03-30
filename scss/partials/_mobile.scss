@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   body {
     margin: 0;
   }
@@ -156,6 +156,9 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 0;
+    .more-wide {
+      display: none;
+    }
     p {
       font-family: $font;
       color: white;
